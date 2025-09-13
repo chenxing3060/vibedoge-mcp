@@ -1,0 +1,42 @@
+{
+  "name": "vibe-coding-lottery-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Vibe Coding Lottery System",
+  "server": {
+    "command": "node",
+    "args": ["dist/index.js"],
+    "env": {
+      "NODE_ENV": "production",
+      "VIBE_CODING_API_URL": "https://api.vibedoge.com",
+      "LOG_LEVEL": "info"
+    }
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "upload_user_profile",
+        "description": "Upload user profile information including avatar and personal details"
+      },
+      {
+        "name": "participate_lottery",
+        "description": "Participate in a lottery activity with specified parameters"
+      },
+      {
+        "name": "get_lottery_result",
+        "description": "Get the result of a specific lottery activity"
+      },
+      {
+        "name": "get_user_history",
+        "description": "Get user's lottery participation history"
+      },
+      {
+        "name": "list_lottery_activities",
+        "description": "List available lottery activities with filtering options"
+      },
+      {
+        "name": "get_lottery_stats",
+        "description": "Get statistical information about lottery activities"
+      }
+    ]
+  }
+}
